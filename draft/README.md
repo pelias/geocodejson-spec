@@ -37,16 +37,38 @@ keys described here are not exclusive.
 
     // OPTIONAL. Default: null. The licence of the data. In case of multiple sources,
     // and then multiple licences, can be an object with one key by source.
-    "licence": "ODbL",
+    // Can be a freeform text property describing the licensing details.
+    // Can be a URI on the server, which outlines licensing details.
+    "licence": "http://pelias.mapzen.com/license",
 
     // OPTIONAL. Default: null. The attribution of the data. In case of multiple sources,
     // and then multiple attributions, can be an object with one key by source.
-    "attribution": "OpenStreetMap Contributors",
+    // Can be a URI on the server, which outlines attribution details.
+    "attribution": "http://pelias.mapzen.com/attribution",
 
     // OPTIONAL. Default: null. The query that has been issued to trigger the
     // search.
+    // Freeform object.
+    // This is the equivalent of how the engine interpreted the incoming request.
+    // Helpful for debugging and understanding how the input impacts results.
     "query": "24 allée de Bercy 75012 Paris",
-
+    // OR
+    "query": {
+      "text": "24 allée de Bercy 75012 Paris",
+      "address": {
+        "number": 24,
+        "street": "allée de Bercy",
+      },
+      "size": 10,
+      "layers": "admin1"
+    },
+    
+    // OPTIONAL
+    // Freeform
+    "engine": {
+      "name": "Pelias",
+      "version": 0.2.0
+    }
   },
 
   // REQUIRED. As per GeoJSON spec.
