@@ -54,6 +54,7 @@ keys described here are not exclusive.
     "query": "24 allée de Bercy 75012 Paris",
     // OR
     "query": {
+      "id": "unique_id_of_query",
       "text": "24 allée de Bercy 75012 Paris",
       "address": {
         "number": 24,
@@ -71,6 +72,10 @@ keys described here are not exclusive.
     }
   },
 
+  // OPTIONAL. Don't really know what this should contain yet...
+  "pagination": {
+  },
+  
   // REQUIRED. As per GeoJSON spec.
   "features": [
     // OPTIONAL. An array of feature objects. See below.
@@ -92,15 +97,20 @@ keys described here are not exclusive.
       // REQUIRED. One of "house", "street", "locality", "city", "region", "country".
       // TODO: make a clean list of common cases, plus make clear that the list
       // isn't meant to be closed.
+      // PELIAS-TODO: discuss with data team!!!
       "type": "house",
 
       // OPTIONAL. Result accuracy, in meters.
       "accuracy": 20,
+      
+      // OPTIONAL. Numeric value between, and including, 0-1. 1 = 100% confidence.
+      "confidence": 0.8,
 
-      // RECOMMENDED. Suggested label for the result.
+      // REQUIRED. Suggested label for the result.
+      // DISCUSS: should format of this label be specified? lenght, abbreviations, locale?
       "label": "My Shoes Shop, 64 rue de Metz 59280 Armentières",
 
-      // OPTIONAL. Name of the place.
+      // RECOMMENDED. Name of the place.
       "name": "My Shoes Shop",
 
       // OPTIONAL. Housenumber of the place.
@@ -122,11 +132,16 @@ keys described here are not exclusive.
       // OPTIONAL. County of the place.
       "county": null,
 
-      // OPTIONAL. State of the place.
-      "state": null,
+      // OPTIONAL. Region of the place. Could represent states, provinces, regions.
+      "region": null,
+      
+      "region_abbr": null,
 
       // OPTIONAL. Country of the place.
       "country": "France",
+      
+      //OPTIONAL
+      "country_abbr": "FR",
 
       // OPTIONAL. Administratives boundaries the feature is included in,
       // as defined in http://wiki.osm.org/wiki/Key:admin_level#admin_level
@@ -145,8 +160,12 @@ keys described here are not exclusive.
 
   // REQUIRED. As per GeoJSON spec.
   "type": "Feature",
-
+  
+  // OPTIONAL. Bounding box of feature.
+  "bbox": [-10.0, -10.0, 10.0, 10.0],
+  
   // REQUIRED. As per GeoJSON spec.
+  // MUST be a "Point" type, which represents a reasonable centroid of the region.
   "geometry": {
     "coordinates": [
       2.889957,
