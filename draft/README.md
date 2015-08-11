@@ -64,6 +64,12 @@ keys described here are not exclusive.
       "layers": "admin1"
     },
     
+    // OPTIONAL. Warnings and errors.
+    "messages": {
+      "warn": ["foo"],
+      "error": ["bar"]
+    },
+    
     // OPTIONAL
     // Freeform
     "engine": {
