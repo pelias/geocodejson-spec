@@ -46,6 +46,9 @@ keys described here are not exclusive.
     // Can be a URI on the server, which outlines attribution details.
     "attribution": "http://pelias.mapzen.com/attribution",
 
+    // REQUIRED. Unix timestamp of response creation time.
+    "timestamp": 1440727875,
+    
     // OPTIONAL. Default: null. The query that has been issued to trigger the
     // search.
     // Freeform object.
