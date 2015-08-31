@@ -111,6 +111,9 @@ keys described here are not exclusive.
       // isn't meant to be closed.
       // PELIAS-TODO: discuss with data team!!!
       "type": "house",
+      
+      // OTPIONAL. If many data sources are present, this indicates which this item is part of. 
+      "source": "osm",
 
       // OPTIONAL. Result accuracy, in meters.
       "accuracy": 20,
