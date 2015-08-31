@@ -102,6 +102,9 @@ keys described here are not exclusive.
 
     // REQUIRED. Namespace.
     "geocoding": {
+      // REQUIRE. Must be unique within the indexed dataset. Must be able to use it to 
+      // lookup place details using /place endpoint.
+      "id": "abc1234",
 
       // REQUIRED. One of "house", "street", "locality", "city", "region", "country".
       // TODO: make a clean list of common cases, plus make clear that the list
