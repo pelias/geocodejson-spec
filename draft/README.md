@@ -88,7 +88,10 @@ keys described here are not exclusive.
   // REQUIRED. As per GeoJSON spec.
   "features": [
     // OPTIONAL. An array of feature objects. See below.
-  ]
+  ],
+  
+  // OPTIONAL. Bounding box encompassing all the result geometries.
+  "bbox": [-10.0, -10.0, 10.0, 10.0]
 }
 ```
 
