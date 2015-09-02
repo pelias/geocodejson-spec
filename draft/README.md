@@ -113,7 +113,7 @@ keys described here are not exclusive.
       // TODO: make a clean list of common cases, plus make clear that the list
       // isn't meant to be closed.
       // PELIAS-TODO: discuss with data team!!!
-      "type": "house",
+      "layer": "house",
       
       // OTPIONAL. If many data sources are present, this indicates which this item is part of. 
       "source": "osm",
