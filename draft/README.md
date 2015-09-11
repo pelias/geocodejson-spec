@@ -48,7 +48,7 @@ keys described here are not exclusive.
 
     // REQUIRED. Unix timestamp of response creation time.
     "timestamp": 1440727875,
-    
+
     // OPTIONAL. Default: null. The query that has been issued to trigger the
     // search.
     // Freeform object.
@@ -66,13 +66,13 @@ keys described here are not exclusive.
       "size": 10,
       "layers": "admin1"
     },
-    
+
     // OPTIONAL. Warnings and errors.
     "messages": {
       "warn": ["foo"],
       "error": ["bar"]
     },
-    
+
     // OPTIONAL
     // Freeform
     "engine": {
@@ -84,12 +84,12 @@ keys described here are not exclusive.
   // OPTIONAL. Don't really know what this should contain yet...
   "pagination": {
   },
-  
+
   // REQUIRED. As per GeoJSON spec.
   "features": [
     // OPTIONAL. An array of feature objects. See below.
   ],
-  
+
   // OPTIONAL. Bounding box encompassing all the result geometries.
   "bbox": [-10.0, -10.0, 10.0, 10.0]
 }
@@ -103,85 +103,82 @@ keys described here are not exclusive.
   // REQUIRED. As per GeoJSON spec.
   "properties": {
 
-    // REQUIRED. Namespace.
-    "geocoding": {
-      // REQUIRE. Must be unique within the indexed dataset. Must be able to use it to 
-      // lookup place details using /place endpoint.
-      "id": "abc1234",
+    // REQUIRE. Must be unique within the indexed dataset. Must be able to use it to
+    // lookup place details using /place endpoint.
+    "id": "abc1234",
 
-      // REQUIRED. One of "house", "street", "locality", "city", "region", "country".
-      // TODO: make a clean list of common cases, plus make clear that the list
-      // isn't meant to be closed.
-      // PELIAS-TODO: discuss with data team!!!
-      "layer": "house",
-      
-      // OTPIONAL. If many data sources are present, this indicates which this item is part of. 
-      "source": "osm",
+    // REQUIRED. One of "house", "street", "locality", "city", "region", "country".
+    // TODO: make a clean list of common cases, plus make clear that the list
+    // isn't meant to be closed.
+    // PELIAS-TODO: discuss with data team!!!
+    "layer": "house",
 
-      // OPTIONAL. Result accuracy, in meters.
-      "accuracy": 20,
-      
-      // OPTIONAL. Numeric value between, and including, 0-1. 1 = 100% confidence.
-      "confidence": 0.8,
+    // OTPIONAL. If many data sources are present, this indicates which this item is part of.
+    "source": "osm",
 
-      // REQUIRED. Suggested label for the result.
-      // DISCUSS: should format of this label be specified? lenght, abbreviations, locale?
-      "label": "My Shoes Shop, 64 rue de Metz 59280 Armentières",
+    // OPTIONAL. Result accuracy, in meters.
+    "accuracy": 20,
 
-      // RECOMMENDED. Name of the place.
-      "name": "My Shoes Shop",
+    // OPTIONAL. Numeric value between, and including, 0-1. 1 = 100% confidence.
+    "confidence": 0.8,
 
-      // OPTIONAL. Housenumber of the place.
-      // TODO: what about the suffix (64A, 64 bis, etc.)?
-      "housenumber": "64",
+    // REQUIRED. Suggested label for the result.
+    // DISCUSS: should format of this label be specified? lenght, abbreviations, locale?
+    "label": "My Shoes Shop, 64 rue de Metz 59280 Armentières",
 
-      // OPTIONAL. Street of the place.
-      "street": "Rue de Metz",
+    // RECOMMENDED. Name of the place.
+    "name": "My Shoes Shop",
 
-      // OPTIONAL. Postcode of the place.
-      "postcode": "59280",
+    // OPTIONAL. Housenumber of the place.
+    // TODO: what about the suffix (64A, 64 bis, etc.)?
+    "housenumber": "64",
 
-      // OPTIONAL. City of the place.
-      "city": "Armentières",
+    // OPTIONAL. Street of the place.
+    "street": "Rue de Metz",
 
-      // OPTIONAL. District of the place.
-      "district": null,
+    // OPTIONAL. Postcode of the place.
+    "postcode": "59280",
 
-      // OPTIONAL. County of the place.
-      "county": null,
+    // OPTIONAL. City of the place.
+    "city": "Armentières",
 
-      // OPTIONAL. Region of the place. Could represent states, provinces, regions.
-      "region": null,
-      
-      "region_abbr": null,
+    // OPTIONAL. District of the place.
+    "district": null,
 
-      // OPTIONAL. Country of the place.
-      "country": "France",
-      
-      //OPTIONAL
-      "country_abbr": "FR",
+    // OPTIONAL. County of the place.
+    "county": null,
 
-      // OPTIONAL. Administratives boundaries the feature is included in,
-      // as defined in http://wiki.osm.org/wiki/Key:admin_level#admin_level
-      // TODO is there some still generic but less OSMish scheme?
-      "admin": {
-        "level2": "France",
-        "level4": "Nord-Pas-de-Calais",
-        "level6": "Nord"
-      },
+    // OPTIONAL. Region of the place. Could represent states, provinces, regions.
+    "region": null,
 
-      // OPTIONAL. Geohash encoding of coordinates (see http://geohash.org/site/tips.html).
-      "geohash" : "Ehugh5oofiToh9aWe3heemu7ighee8",
-    }
+    "region_abbr": null,
+
+    // OPTIONAL. Country of the place.
+    "country": "France",
+
+    //OPTIONAL
+    "country_abbr": "FR",
+
+    // OPTIONAL. Administratives boundaries the feature is included in,
+    // as defined in http://wiki.osm.org/wiki/Key:admin_level#admin_level
+    // TODO is there some still generic but less OSMish scheme?
+    "admin": {
+      "level2": "France",
+      "level4": "Nord-Pas-de-Calais",
+      "level6": "Nord"
+    },
+
+    // OPTIONAL. Geohash encoding of coordinates (see http://geohash.org/site/tips.html).
+    "geohash" : "Ehugh5oofiToh9aWe3heemu7ighee8",
 
   },
 
   // REQUIRED. As per GeoJSON spec.
   "type": "Feature",
-  
+
   // OPTIONAL. Bounding box of feature.
   "bbox": [-10.0, -10.0, 10.0, 10.0],
-  
+
   // REQUIRED. As per GeoJSON spec.
   // MUST be a "Point" type, which represents a reasonable centroid of the region.
   "geometry": {
