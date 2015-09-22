@@ -1,0 +1,248 @@
+{
+  "geocoding": {
+    "version": "0.1",
+    "attribution": "http://pelias.mapzen.com/v1/attribution",
+    "query": {
+      "text": "Mapzen",
+      "parsed_text": {
+        "regions": [
+          "Mapzen"
+        ]
+      },
+      "size": 10,
+      "private": false
+    },
+    "engine": {
+      "name": "Pelias",
+      "author": "Mapzen",
+      "version": "1.0"
+    },
+    "timestamp": 1442882160591
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3744735381",
+        "layer": "venue",
+        "source": "osm",
+        "name": "Mapzen",
+        "housenumber": "155",
+        "street": "9th Street",
+        "postalcode": "94103",
+        "country_a": "USA",
+        "country": "United States",
+        "region": "California",
+        "region_a": "CA",
+        "county": "San Francisco County",
+        "locality": "San Francisco",
+        "neighbourhood": "Civic Center",
+        "label": "Mapzen, San Francisco, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.413596,
+          37.775693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3204871461",
+        "layer": "venue",
+        "source": "osm",
+        "name": "Mapzen Boston",
+        "street": "Acorn Road",
+        "postalcode": "02093",
+        "country_a": "USA",
+        "country": "United States",
+        "region": "Massachusetts",
+        "region_a": "MA",
+        "county": "Norfolk County",
+        "localadmin": "Wrentham",
+        "label": "Mapzen Boston, Wrentham, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.36663,
+          42.048074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11792:adm2:mx:mex:mapim__",
+        "layer": "county",
+        "source": "qs",
+        "name": "Mapimã­",
+        "country_a": "MEX",
+        "country": "Mexico",
+        "region": "Durango",
+        "county": "Mapimã­",
+        "label": "Mapimã­, Durango"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.131332918221,
+          26.1459963707366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1671:adm1:mz:moz:maputo",
+        "layer": "region",
+        "source": "qs",
+        "name": "Maputo",
+        "country_a": "MOZ",
+        "country": "Mozambique",
+        "region": "Maputo",
+        "label": "Maputo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.4389227214931,
+          -25.5393356403116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1672:adm1:mz:moz:maputo",
+        "layer": "region",
+        "source": "qs",
+        "name": "Maputo",
+        "country_a": "MOZ",
+        "country": "Mozambique",
+        "region": "Maputo",
+        "label": "Maputo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.5832683797503,
+          -25.918960938665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "10915:adm2:id:idn:mappi",
+        "layer": "county",
+        "source": "qs",
+        "name": "Mappi",
+        "country_a": "IDN",
+        "country": "Indonesia",
+        "region": "Papua",
+        "county": "Mappi",
+        "label": "Mappi, Papua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.39488849721,
+          -6.44828920856536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "271:adm2:au:aus:mapoon",
+        "layer": "county",
+        "source": "qs",
+        "name": "Mapoon",
+        "country_a": "AUS",
+        "country": "Australia",
+        "region": "Queensland",
+        "county": "Mapoon",
+        "label": "Mapoon, Queensland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.91976534932,
+          -12.143710461579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12045:adm2:mx:mex:mapastepec",
+        "layer": "county",
+        "source": "qs",
+        "name": "Mapastepec",
+        "country_a": "MEX",
+        "country": "Mexico",
+        "region": "Chiapas",
+        "county": "Mapastepec",
+        "label": "Mapastepec, Chiapas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.8916328616215,
+          15.4610024106347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4638:adm1:us:usa:massachusetts",
+        "layer": "region",
+        "source": "qs",
+        "name": "Massachusetts",
+        "country_a": "USA",
+        "country": "United States",
+        "region": "Massachusetts",
+        "region_a": "MA",
+        "label": "Massachusetts, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5039972329472,
+          42.1600931985017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3387:adm1:es:esp:madrid",
+        "layer": "region",
+        "source": "qs",
+        "name": "Madrid",
+        "country_a": "ESP",
+        "country": "Spain",
+        "region": "Madrid",
+        "label": "Madrid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.71701518231323,
+          40.4950680111115
+        ]
+      }
+    }
+  ],
+  "bbox": [
+    -122.413596,
+    -25.918960938665,
+    141.91976534932,
+    42.1600931985017
+  ]
+}
